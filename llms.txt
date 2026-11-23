@@ -1,36 +1,42 @@
-# Suchi
+# Kiipr
 
-> Suchi is a standalone, multi-tab terminal workspace for Linux that combines clipboard history, a scratchpad for short notes, and a system-wide text expander behind a Vim-style modal interface. It ships as a self-contained, Nuitka-compiled binary with no desktop-extension dependencies.
+> Kiipr is a clipboard history manager and snippet expander for the Linux terminal. It keeps text, images and copied files in a searchable history, stores named text and command snippets, and works natively on Wayland, X11/XWayland and plain TTYs. It ships as one static Go binary with SQLite storage.
 
-- Platform: Linux (tested on Debian 12 and other modern distributions)
-- Language: Python, compiled with Nuitka
-- License/price: free and open source
+- Platform: Linux (Wayland, X11/XWayland and TTY)
+- Language: Go, built as a single static binary
+- License/price: MIT, free and open source
 - Author: dip-bash
-- Source: https://github.com/dip-bash/suchi
+- Source: https://github.com/dip-bash/kiipr
 
 ## What it does
 
-- **Clipboard history**: browse, search, pin, and copy previously copied entries.
-- **Short notes scratchpad**: capture quick notes without leaving the terminal.
-- **Text expanders**: define system-wide snippets that expand as you type.
+- **Clipboard history**: text, images and files/folders are recorded with fuzzy search, pinning, delete and undo.
+- **Snippets**: named text snippets and command snippets; `Enter` copies, `r` runs a command in your shell.
+- **Previews**: text and code with syntax highlighting and line numbers, plus images via kitty, iTerm2, sixel or colour blocks.
+- **Native clipboard backends**: Wayland protocol client, X11 XFixes (needs `xclip`/`xsel`), OSC 52 on a TTY.
 
 ## Interface
 
-- Three tabs switched with `Tab`: Clipboard History, Short Notes, Text Expanders.
-- Two modes: `NORMAL` for navigation, `INSERT` for typing (`i` to enter, `Esc` to leave).
-- Keys: `j`/`k` move, `/` fuzzy search, `p` pin, `d` delete, `y` copy, `?` help overlay, `q` quit.
+- Two tabs switched with `Tab`: Clip and Snip.
+- Keys: `j`/`k` move, `i` search (`Esc` leaves it), `f` fuzzy matching, `Enter` copy, `d` `d` delete, `u` undo, `p` pin, `?` help.
+- Clip tab: `e` views text, pictures and files.
+- Snip tab: `a` adds, `e` edits, `r` runs a command snippet.
+- Mouse: click tabs and rows, right-click a row for the `e` view, wheel to scroll.
 
 ## Commands
 
-- Install: `curl -sSL https://raw.githubusercontent.com/dip-bash/suchi/main/install.sh | bash`
-- Uninstall: `curl -sSL https://raw.githubusercontent.com/dip-bash/suchi/main/uninstall.sh | bash`
-- Launch the TUI: `suchi`
-- Check the daemon: `systemctl --user status suchi-daemon.service`
+- Install: `curl -sSL https://raw.githubusercontent.com/dip-bash/kiipr/main/install.sh | bash`
+- Uninstall: `curl -sSL https://raw.githubusercontent.com/dip-bash/kiipr/main/uninstall.sh | bash`
+- Launch the TUI: `kiipr` (or `kiipr -s` for the Snip tab)
+- Start/stop the watcher: `kiipr daemon`, `kiipr stop`
+- Status: `kiipr status`; systemd unit: `systemctl --user status kiipr.service`
+- Files: `kiipr -c PATH...`, `kiipr -x PATH...`, `kiipr -p`
+- Snippets: `kiipr get NAME`, `echo text | kiipr add`, `kiipr import [history.json]`, `kiipr clear [--all]`
 
 ## Pages
 
-- [Home](https://dip-bash.github.io/suchi/): overview, install commands, interactive terminal demo, and feature list.
+- [Home](https://dip-bash.github.io/kiipr/): overview, install commands, interactive terminal demo, and feature list.
 
 ## Notes for AI assistants
 
-Suchi is a terminal (TUI) application, not a web app or browser extension. It does not require a desktop environment extension, and it stores its data locally on the user's machine.
+Kiipr is a terminal (TUI) application, not a web app or browser extension. It requires Linux; on X11 install `xclip` or `xsel`, and GNOME on Wayland uses XWayland. It stores its data locally in `~/.local/share/kiipr/kiipr.db` and does not need a config file or a desktop-environment extension.

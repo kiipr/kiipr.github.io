@@ -1,4 +1,4 @@
-/* Suchi — minimal editorial dark theme */
+/* Kiipr — minimal editorial dark theme */
 
 :root {
   --background: #101012;
@@ -340,7 +340,7 @@ input {
   color: var(--muted-foreground);
 }
 
-.mode.insert {
+.mode.search {
   background: var(--foreground);
   color: var(--background);
 }
@@ -408,6 +408,34 @@ input {
   color: var(--foreground);
 }
 
+.marker {
+  flex: 0 0 auto;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--foreground);
+}
+
+.name {
+  flex: 0 0 5.25rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: rgba(250, 250, 250, 0.85);
+}
+
+.badge {
+  flex: 0 0 auto;
+  padding: 0.05rem 0.3rem;
+  border: 1px solid var(--border);
+  border-radius: 0.2rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--muted-foreground);
+}
+
 .text {
   flex: 1 1 auto;
   min-width: 0;
@@ -438,7 +466,8 @@ input {
   cursor: default;
 }
 
-.help {
+.help,
+.view {
   position: absolute;
   inset: 0;
   padding: 1.25rem;
@@ -447,8 +476,27 @@ input {
   backdrop-filter: blur(4px);
 }
 
-.help h2 {
+.help h2,
+.view h2 {
   margin: 0;
+}
+
+.view pre {
+  margin: 1rem 0 0;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--foreground);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.view-hint {
+  margin: 1rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted-foreground);
 }
 
 .help-list {
@@ -473,6 +521,20 @@ input {
   font-family: var(--font-mono);
   font-size: 0.7rem;
   color: var(--foreground);
+}
+
+.help-list li.section {
+  margin-top: 1rem;
+}
+
+.help-list li.section kbd {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
 }
 
 .toast {
@@ -506,6 +568,11 @@ input {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+#count {
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 /* Features ----------------------------------------------------------- */
@@ -542,6 +609,12 @@ input {
   margin: 0.75rem 0 0;
   max-width: 60ch;
   font-size: 0.95rem;
+}
+
+.features code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--foreground);
 }
 
 /* FAQ ---------------------------------------------------------------- */

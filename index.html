@@ -3,37 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Suchi — Terminal Workspace Suite for Linux</title>
+    <title>Kiipr — Clipboard History and Snippets for the Terminal</title>
     <meta
       name="description"
-      content="Suchi is a standalone multi-tab terminal workspace for Linux: clipboard history, scratchpad notes, and text expanders with Vim-style modal navigation."
+      content="Kiipr is a clipboard manager and snippet expander for the Linux terminal: text, images and files with fuzzy search, previews and Vim-style keys."
     />
     <meta
       name="keywords"
-      content="clipboard manager, text expander, vim tui, linux tool, terminal scratchpad, fuzzy search, developer productivity, python"
+      content="clipboard manager, clipboard history, snippet manager, code snippets, terminal tui, wayland clipboard, x11 clipboard, linux tool, fuzzy search, vim keys, golang"
     />
     <meta name="author" content="dip-bash" />
     <meta name="theme-color" content="#09090b" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-    <link rel="canonical" href="https://dip-bash.github.io/suchi/" />
+    <link rel="canonical" href="https://dip-bash.github.io/kiipr/" />
 
-    <meta property="og:site_name" content="Suchi" />
+    <meta property="og:site_name" content="Kiipr" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://dip-bash.github.io/suchi/" />
-    <meta property="og:title" content="Suchi — Terminal Workspace Suite for Linux" />
+    <meta property="og:url" content="https://dip-bash.github.io/kiipr/" />
+    <meta property="og:title" content="Kiipr — Clipboard History and Snippets for the Terminal" />
     <meta
       property="og:description"
-      content="Suchi is a standalone multi-tab terminal workspace for Linux: clipboard history, scratchpad notes, and text expanders with Vim-style modal navigation."
+      content="Kiipr is a clipboard manager and snippet expander for the Linux terminal: text, images and files with fuzzy search, previews and Vim-style keys."
     />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Suchi — Terminal Workspace Suite for Linux" />
+    <meta name="twitter:title" content="Kiipr — Clipboard History and Snippets for the Terminal" />
     <meta
       name="twitter:description"
-      content="Suchi is a standalone multi-tab terminal workspace for Linux: clipboard history, scratchpad notes, and text expanders with Vim-style modal navigation."
+      content="Kiipr is a clipboard manager and snippet expander for the Linux terminal: text, images and files with fuzzy search, previews and Vim-style keys."
     />
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗒️</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>">
     <link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,36 +49,37 @@
         "@graph": [
           {
             "@type": "SoftwareApplication",
-            "@id": "https://dip-bash.github.io/suchi/#software",
-            "name": "Suchi",
-            "alternateName": "suchi",
+            "@id": "https://dip-bash.github.io/kiipr/#software",
+            "name": "Kiipr",
+            "alternateName": "kiipr",
             "operatingSystem": "Linux",
             "applicationCategory": "DeveloperApplication",
             "applicationSubCategory": "Terminal utility",
-            "description": "Suchi is a standalone multi-tab terminal workspace for Linux: clipboard history, scratchpad notes, and text expanders with Vim-style modal navigation.",
-            "softwareHelp": "https://github.com/dip-bash/suchi",
-            "installUrl": "https://github.com/dip-bash/suchi",
-            "downloadUrl": "https://github.com/dip-bash/suchi",
-            "programmingLanguage": "Python",
+            "description": "Kiipr is a clipboard history manager and snippet expander for the Linux terminal, with fuzzy search, previews, native Wayland and X11 support, and Vim-style keys.",
+            "softwareHelp": "https://github.com/dip-bash/kiipr",
+            "installUrl": "https://github.com/dip-bash/kiipr",
+            "downloadUrl": "https://github.com/dip-bash/kiipr",
+            "programmingLanguage": "Go",
             "license": "https://opensource.org/licenses/MIT",
             "featureList": [
-              "Clipboard history with fuzzy search and pinning",
-              "Short notes scratchpad",
-              "System-wide text expanders",
-              "Vim-style modal navigation (Normal and Insert modes)",
-              "Self-contained Nuitka-compiled binary, no desktop extensions"
+              "Clipboard history for text, images and files/folders",
+              "Named snippets, including shell commands you can run from the list",
+              "Fuzzy search, pinning, delete and undo",
+              "Image previews (kitty, iTerm2, sixel, colour blocks) and bat-style text previews",
+              "Native Wayland and X11 support, works over SSH and on a TTY",
+              "Single static Go binary with SQLite storage, no config file"
             ],
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
             "author": { "@type": "Person", "name": "dip-bash" }
           },
           {
             "@type": "WebSite",
-            "@id": "https://dip-bash.github.io/suchi/#website",
-            "name": "Suchi",
-            "url": "https://dip-bash.github.io/suchi/",
+            "@id": "https://dip-bash.github.io/kiipr/#website",
+            "name": "Kiipr",
+            "url": "https://dip-bash.github.io/kiipr/",
             "inLanguage": "en",
-            "description": "Suchi is a standalone multi-tab terminal workspace for Linux: clipboard history, scratchpad notes, and text expanders with Vim-style modal navigation.",
-            "about": { "@id": "https://dip-bash.github.io/suchi/#software" }
+            "description": "Kiipr is a clipboard history manager and snippet expander for the Linux terminal, with fuzzy search, previews, native Wayland and X11 support, and Vim-style keys.",
+            "about": { "@id": "https://dip-bash.github.io/kiipr/#software" }
           }
         ]
       }
@@ -88,10 +89,10 @@
   <body>
     <header class="site-header">
       <nav class="nav wrap">
-        <span class="brand">suchi</span>
+        <span class="brand">kiipr</span>
         <a
           class="gh"
-          href="https://github.com/dip-bash/suchi"
+          href="https://github.com/dip-bash/kiipr"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -107,12 +108,13 @@
     <main class="wrap main">
       <div class="hero-grid">
         <section class="col">
-          <p class="eyebrow">Standalone Linux suite</p>
-          <h1 class="display-xl">suchi</h1>
-          <p class="display-sub">Multi-tab terminal workspace</p>
+          <p class="eyebrow">Clipboard and snippets for the terminal</p>
+          <h1 class="display-xl">kiipr</h1>
+          <p class="display-sub">Your clipboard, with a memory.</p>
           <p class="lede">
-            Clipboard history, a scratchpad for notes, and a system-wide text expander — all behind
-            Vim-style modal navigation, in one self-contained binary.
+            Everything you copy — text, screenshots, files — and every snippet you keep, one
+            keystroke away. Native on Wayland and X11, still useful over SSH and on a TTY, all in one
+            static binary.
           </p>
 
           <div class="commands">
@@ -131,7 +133,7 @@
           <div class="term" id="term" tabindex="0">
             <div class="term-bar">
               <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-              <span class="term-title">suchi</span>
+              <span class="term-title">kiipr</span>
             </div>
 
             <div class="term-tabs" role="tablist" aria-label="Workspace tabs" id="term-tabs"></div>
@@ -152,15 +154,22 @@
             <div class="term-body">
               <ul class="term-list" id="list" role="listbox" aria-label="Items"></ul>
               <div class="help" id="help" hidden>
-                <h2 class="eyebrow">Suchi Keybindings</h2>
+                <h2 class="eyebrow">Kiipr keybindings</h2>
                 <ul class="help-list" id="help-list"></ul>
+              </div>
+              <div class="view" id="view" hidden>
+                <h2 class="eyebrow" id="view-title">Preview</h2>
+                <pre id="view-body"></pre>
+                <p class="view-hint">Enter copies · Esc closes</p>
               </div>
               <div class="toast" id="toast" hidden></div>
             </div>
 
             <div class="term-foot">
               <span id="count">0 items</span>
-              <span class="hint">Tab: Switch · j/k: Nav · p: Pin · d: Del · ?: Help</span>
+              <span class="hint" id="hint"
+                >Enter copy · e view · p pin · d delete · i search · Tab snip · ? help</span
+              >
             </div>
           </div>
         </section>
@@ -169,26 +178,29 @@
       <section class="features" aria-label="Features">
         <article>
           <span class="num">01</span>
-          <h2>3-Tab Workspace</h2>
+          <h2>Clipboard history, not just text</h2>
           <p>
-            Use the Tab key to instantly switch between your Clipboard History, Short Notes
-            scratchpad, and system-wide Text Expanders.
+            Text, screenshots and the files you copy land in the Clip tab. Search fuzzily, pin what
+            matters, press Enter to put it back — or <code>e</code> to preview code with syntax
+            highlighting and images right in the terminal.
           </p>
         </article>
         <article>
           <span class="num">02</span>
-          <h2>Vim Modal Interface</h2>
+          <h2>Snippets that do things</h2>
           <p>
-            Dedicated Normal and Insert modes. Navigate with j/k, search, pin p, or delete d items
-            instantly, and access a built-in help overlay with ?.
+            Keep named text snippets for the things you type all day, and command snippets for the
+            things you run all day. Enter copies, <code>r</code> runs it in your shell,
+            <code>a</code> adds a new one.
           </p>
         </article>
         <article>
           <span class="num">03</span>
-          <h2>Standalone Linux App</h2>
+          <h2>Native on Wayland, X11 and TTY</h2>
           <p>
-            Zero desktop extension dependencies. Perfect for Debian 12 and other modern
-            distributions, it ships as a highly optimized, self-contained Nuitka-compiled binary.
+            Talks the Wayland protocol directly and watches X11 selections through XFixes — no
+            polling, no desktop extension. On a TTY it still copies via OSC 52. One static Go
+            binary, SQLite storage, no config file.
           </p>
         </article>
       </section>
@@ -197,41 +209,53 @@
         <h2 class="eyebrow" id="faq-heading">Questions</h2>
         <dl>
           <div>
-            <dt>What is Suchi?</dt>
+            <dt>What is Kiipr?</dt>
             <dd>
-              A standalone terminal (TUI) workspace for Linux that combines clipboard history, a
-              short-notes scratchpad, and system-wide text expanders in one binary.
+              A terminal (TUI) clipboard manager and snippet expander for Linux. It keeps clipboard
+              history for text, images and files, and stores named snippets — including shell
+              commands — behind Vim-style keys.
             </dd>
           </div>
           <div>
             <dt>How do I install it?</dt>
             <dd>
               Run the install script from the repository, then launch it with
-              <code>suchi</code>. Check the background daemon with
-              <code>systemctl --user status suchi-daemon.service</code>.
+              <code>kiipr</code>. The installer also sets up the background watcher as a systemd
+              user unit; check it with
+              <code>systemctl --user status kiipr.service</code>.
             </dd>
           </div>
           <div>
             <dt>Which systems does it support?</dt>
             <dd>
-              Modern Linux distributions, tested on Debian 12. No desktop-environment extensions are
-              required.
+              Linux on Wayland, X11/XWayland and plain TTYs. X11 needs <code>xclip</code> or
+              <code>xsel</code>; GNOME on Wayland uses XWayland. No desktop extensions are required,
+              and macOS and Windows are not supported.
             </dd>
           </div>
           <div>
             <dt>How do I navigate it?</dt>
             <dd>
-              Vim-style modal keys: Tab switches workspaces, j/k moves, / searches, p pins, d
-              deletes, y copies, and ? opens help.
+              Tab switches Clip ⇄ Snip, j/k moves, i searches, f toggles fuzzy matching, Enter
+              copies, d d deletes, u undoes and p pins. In Snip, a adds, e edits and r runs a
+              command. ? shows every key.
+            </dd>
+          </div>
+          <div>
+            <dt>Does it work over SSH or in tmux?</dt>
+            <dd>
+              Yes. History lives on the machine running kiipr, and copies still reach your terminal
+              via OSC 52. Pictures fall back to colour blocks where a graphics protocol cannot pass
+              through.
             </dd>
           </div>
         </dl>
       </section>
 
       <footer class="site-footer">
-        <span>Suchi · MIT</span>
-        <a href="https://github.com/dip-bash/suchi" target="_blank" rel="noopener noreferrer"
-          >github.com/dip-bash</a
+        <span>Kiipr · MIT</span>
+        <a href="https://github.com/dip-bash/kiipr" target="_blank" rel="noopener noreferrer"
+          >github.com/dip-bash/kiipr</a
         >
       </footer>
     </main>

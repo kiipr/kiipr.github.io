@@ -29,4 +29,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://dip-bash.github.io/suchi/sitemap.xml
+Sitemap: https://dip-bash.github.io/kiipr/sitemap.xml
